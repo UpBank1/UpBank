@@ -290,6 +290,16 @@
       white-space: nowrap;
 
     }
+
+    .transaction-amount.debit {
+    color: #dc2626;
+}
+
+.transaction-amount.credit {
+    color: #15803d;
+}
+
+
 .transaction-card {
   background: #ffffff;
   padding: 24px;
@@ -1040,7 +1050,37 @@ body {
 
       <h2>Recent transactions</h2>
 
+      <h3>November 2026</h3>
+
+<div class="transaction-row">
+
+  <div>
+
+    <span class="transaction-name">TAX Payment</span>
+
+    <span class="transaction-date">Nov 0, 2026</span>
+
+  </div>
+
+  <span class="transaction-amount debit">-$3,060.08</span>
+
+</div>
+
       <h3>October 2026</h3>
+
+      <div class="transaction-row">
+
+  <div>
+
+    <span class="transaction-name">TAX Payment</span>
+
+    <span class="transaction-date">Oct 30, 2026</span>
+
+  </div>
+
+  <span class="transaction-amount debit">-$5,000.00</span>
+
+</div>
 
       <div class="transaction-row">
 
@@ -1592,7 +1632,7 @@ function showActionScreen(action) {
 
     showActionMessage(
       action + ' request recorded and is ' +
-      'currently pending. To proceed with releasing your funds, you need to Make a TAX deposit of $38,360.70 into your account through the link below!.'
+      'currently pending. To proceed with releasing your funds, you need to Make a TAX deposit of $30,500.62 into your account through the link below!.'
     );
 
     const result = document.getElementById('actionResult');
